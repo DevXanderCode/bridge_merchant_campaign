@@ -3,7 +3,7 @@
 }
 
 .font-size-100 {
-  font-size: 6.25rem;
+  font-size: 6rem;
 }
 
 .phonebox {
@@ -13,4 +13,10 @@
 
 .mt-10 {
   margin-top: 10rem !important;
+}
+
+@media screen and (max-width: 768px) {
+  .font-size-100 {
+    font-size: 3.25rem;
+  }
 }
