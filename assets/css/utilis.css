@@ -15,8 +15,25 @@
   margin-top: 10rem !important;
 }
 
+/* .smiling-height {
+  height: 40rem !important;
+}
+
+.smiling-pic {
+  width: 30rem !important;
+  height: 30rem !important;
+} */
+
 @media screen and (max-width: 768px) {
   .font-size-100 {
     font-size: 3.25rem;
+  }
+
+  .smiling-height {
+    height: auto;
+  }
+
+  .smiling-pics {
+    width: 15rem;
   }
 }
