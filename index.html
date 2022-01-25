@@ -200,70 +200,87 @@
 
 
     <div class='shadow-lg sm:p-5 col-md-11 mx-auto'>
-        <div class="row col-md-10 justify-content-center align-items-center py-3 text-center mx-auto flex-wrap">
-            <div class="col-md-6">
-                <div class="form-floating mb-2 justify-content-center d-flex">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="John" />
-                    <label for="floatingInput">Firstname</label>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-floating mb-2">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Doe" />
-                    <label for="floatingInput">Lastname</label>
-                </div>
-            </div>
-        </div>
+        <!-- Add email later -->
+        <form action="https://mailthis.to/you@mail.com" method="POST" encType="multipart/form-data">
 
-        <div class="row col-md-10 justify-content-center align-items-center text-center mx-auto flex-wrap">
-            <div class="col-md-6">
-                <div class="form-floating mb-2">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
-                    <label for="floatingInput">Email</label>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-floating mb-2">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" />
-                    <label for="floatingInput">Phone Number</label>
-                </div>
-            </div>
-        </div>
 
-        <div class="row col-md-10 justify-content-center align-items-center text-center mx-auto flex-wrap">
-            <div class="col-md-6">
-                <div class="form-floating mb-2">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" />
-                    <label for="floatingInput">State</label>
+            <div class="row col-md-10 justify-content-center align-items-center py-3 text-center mx-auto flex-wrap">
+                <div class="col-md-6">
+                    <div class="form-floating mb-2 justify-content-center d-flex">
+                        <input type="text" class="form-control" id="floatingInput" name='firstName'
+                            placeholder="John" />
+                        <label for="floatingInput">Firstname</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-floating mb-2">
+                        <input type="text" class="form-control" id="floatingInput" name='lastName' placeholder="Doe" />
+                        <label for="floatingInput">Lastname</label>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="form-floating mb-2">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" />
-                    <label for="floatingInput">Local Government Area</label>
-                </div>
-            </div>
-        </div>
 
-        <div class="row col-md-10 justify-content-center align-items-center text-center mx-auto flex-wrap">
-            <div class="col-md-12">
-                <div class="form-floating mb-2">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="testarro address" />
-                    <label for="floatingInput">Address</label>
+            <div class="row col-md-10 justify-content-center align-items-center text-center mx-auto flex-wrap">
+                <div class="col-md-6">
+                    <div class="form-floating mb-2">
+                        <input type="email" class="form-control" id="floatingInput" name="email"
+                            placeholder="name@example.com" />
+                        <label for="floatingInput">Email</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-floating mb-2">
+                        <input type="text" class="form-control" id="floatingInput" name='phoneNumber'
+                            placeholder="00000000" />
+                        <label for="floatingInput">Phone Number</label>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="row col-md-10 justify-content-center align-items-center text-center mx-auto flex-wrap">
-            <div class="col-md-12">
-                <div class="d-flex justify-content-center align-items-center">
-                    <button type="button"
-                        class="btn w-50 py-2 bg-deepgreen text-white rounded-pill shadow-lg me-4 mb-3">
-                        Register
-                    </button>
+            <div class="row col-md-10 justify-content-center align-items-center text-center mx-auto flex-wrap">
+                <div class="col-md-6">
+                    <div class="form-floating mb-2">
+                        <input type="text" class="form-control" id="floatingInput" name='state' placeholder="state" />
+                        <label for="floatingInput">State</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-floating mb-2">
+                        <input type="text" class="form-control" id="floatingInput" name='lga' placeholder="LGA" />
+                        <label for="floatingInput">Local Government Area</label>
+                    </div>
                 </div>
             </div>
-        </div>
+
+            <div class="row col-md-10 justify-content-center align-items-center text-center mx-auto flex-wrap">
+                <div class="col-md-12">
+                    <div class="form-floating mb-2">
+                        <input type="text" class="form-control" id="floatingInput" name='Address'
+                            placeholder="testarro address" />
+                        <label for="floatingInput">Address</label>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <input type="hidden" name="_honeypot" value="">
+            </div>
+
+            <div>
+                <input type="hidden" name="_confirmation" value="Thank you!!, we will get in touch you in no time...">
+            </div>
+
+            <div class="row col-md-10 justify-content-center align-items-center text-center mx-auto flex-wrap">
+                <div class="col-md-12">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <button type="submit"
+                            class="btn w-50 py-2 bg-deepgreen text-white rounded-pill shadow-lg me-4 mb-3">
+                            Register
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
 
     <div class="d-flex justify-content-center align-items-center px-3">
