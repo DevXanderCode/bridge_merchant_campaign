@@ -122,7 +122,7 @@
         </div>
     </div>
 
-    <div class="d-flex bg-white py-5 justify-content-center align-items-center flex-column text-center mw-100">
+    <div class="d-flex bg-white py-5 px-5 justify-content-center align-items-center flex-column text-center mw-100">
         <img src="assets/images/time.png" class="mt-5" />
         <p class="mb-0 fs-3 mt-3">Save your time with</p>
         <p class="fw-bolder fs-3">Brigemerchant</p>
@@ -139,7 +139,7 @@
             <img src="assets/images/lady2.png" class="position-relative right-0" />
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-6 pe-5">
             <p class="font-size-100 c-deepgreen mb-0">Become a</p>
             <p class="font-size-100 c-deepgreen">Bridge Agent</p>
 
@@ -157,9 +157,9 @@
         </div>
     </div>
 
-    <div class="d-flex justify-content-between ps-5 py-5 bg-green text-white flex-wrap h-75 mw-100">
+    <div class="d-flex justify-content-between ps-5 pe-5 py-5 bg-green text-white flex-wrap  mw-100">
         <div class="col-md-6">
-            <img src="assets/images/smiling_babe.png" style="width: 65%" />
+            <img src="assets/images/smiling_babe.png" class='smiling-pic mb-auto' />
         </div>
 
         <div class="col-md-6">
@@ -180,13 +180,13 @@
         </div>
     </div>
 
-    <div class="d-flex justify-content-between ps-5 py-5 bg-white flex-wrap mw-100">
+    <div class="d-flex justify-content-between ps-5 pe-5 py-5 bg-white flex-wrap mw-100">
         <div class="col-md-6">
-            <img src="assets/images/Thinking_Man.png" />
+            <img src="assets/images/Thinking_Man.png" class="w-75" />
         </div>
 
         <div class="col-md-6">
-            <p class="mb-0 font-weight-bold font-size-100 c-textgreen">
+            <p class="mb-2 font-weight-bold font-size-100 c-textgreen">
                 What do you need to be an Agent ?
             </p>
             <p class="font-weight-bold fs-2 c-textlightgreen">
@@ -197,22 +197,62 @@
         </div>
     </div>
 
-    <!-- <div class='d-flex justify-content-center align-items-center bg-white mw-100'>
+    <div class='d-flex justify-content-center align-items-center bg-white mw-100'>
         <main class="form-signin col-md-6 ">
             <form>
-                <div class='d-flex justify-content-around flex-wrap'>
-                    <div class="d-flex flex-column form-group">
-                        <label>Firstname</label>
-                        <input type='text' class="form-control rounded-3" style='outline-radius: 1rem'
-                            placeholholder="John">
-
+                <div class='d-flex flex-wrap align-items-center justify-content-center   md:mb-2 col-md-10'>
+                    <div class="form-floating mb-2 me-1">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="John">
+                        <label for="floatingInput">Firstname</label>
+                    </div>
+                    <div class="form-floating  mb-2  me-1">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Doe">
+                        <label for="floatingInput">Lastname</label>
                     </div>
                 </div>
+
+                <div class='d-flex flex-wrap align-items-center justify-content-center  md:mb-2 col-md-10'>
+                    <div class="form-floating mb-2 me-1">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">State</label>
+                    </div>
+                    <div class="form-floating mb-2 me-1">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Local Government Area</label>
+                    </div>
+                </div>
+
+                <div class='d-flex flex-wrap align-items-center justify-content-center md:mb-2 col-md-10'>
+                    <div class="form-floating mb-2 me-1">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email</label>
+                    </div>
+                    <div class="form-floating me-1 mb-2">
+                        <input type='text' class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Phone Number</label>
+                    </div>
+                </div>
+
+                <div class='md:mx-0 lg:me-0'>
+
+                    <div class="form-floating mb-2 col-md-10">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Address</label>
+                    </div>
+                </div>
+
+                <div class='d-flex justify-content-center align-items-center'>
+                    <button type="button"
+                        class="btn w-50 py-2 bg-deepgreen text-white rounded-pill shadow-lg me-4 mb-3">
+                        Register
+                    </button>
+                </div>
+
             </form>
         </main>
-    </div> -->
+    </div>
 
-    <div class="d-flex justify-content-center align-items-center">
+    <div class="d-flex justify-content-center align-items-center px-3">
         <div class="text-right">
             <div class="text-center">
                 <p class="fw-bolder fs-1 c-textgreen">What do you get ?</p>
@@ -220,7 +260,7 @@
                     Bridge merchant provides its Agents with
                 </p>
             </div>
-            <div class="justify-content-center d-flex">
+            <div class="justify-content-center align-items-center d-flex flex-column">
                 <ul class="list-unstyled fs-3 text-right c-textlightgreen col-md-9">
                     <li class="d-flex">
                         <p class="mb-0 me-1">√</p>
@@ -245,6 +285,12 @@
                         <p class="mb-0">Brand identification.</p>
                     </li>
                 </ul>
+
+                <p class='fs-3 c-textlightgreen fw-bold col-md-9'>Remember agents make money on each transaction within
+                    the
+                    farms, and
+                    the possibilities are endless...
+                </p>
             </div>
         </div>
     </div>
